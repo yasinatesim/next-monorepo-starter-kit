@@ -11,6 +11,9 @@
     "build": "lerna run --parallel build"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "husky": "^7.0.2",
     "lerna": "^3.22.1",
     "npm-run-all": "^4.1.5"
   },
