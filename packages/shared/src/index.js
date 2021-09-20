@@ -1,1 +1,5 @@
-export {Button} from "./components/atoms/Button"
+import Login from './pages/auth/login';
+
+export {
+  Login,
+};

@@ -49,6 +49,7 @@
     "max-len": "off",
     "no-useless-escape": "off",
     "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
     "comma-dangle": [
       "error",
       {

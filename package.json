@@ -9,8 +9,8 @@
     "package:mobile": "lerna run --scope mobile --stream dev",
     "start": "run-p --print-label package:*",
     "build": "lerna run --parallel build",
-    "lint": "eslint packages/**/*.js --fix",
-    "format": "prettier packages/**/*.{js,scss} --write"
+    "lint": "eslint . --fix",
+    "format": "prettier packages/**/**/*.{js,scss} --write"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
