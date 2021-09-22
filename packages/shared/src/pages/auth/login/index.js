@@ -1,5 +1,4 @@
 import React from 'react';
-import cls from 'classnames';
 
 import { Logo, Facebook, Apple, Google } from '../../../components/icon';
 import Button from '../../../components/button';
