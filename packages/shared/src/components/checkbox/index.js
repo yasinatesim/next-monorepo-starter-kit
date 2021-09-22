@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cls from 'classnames';
 
 // Styles
 import s from './index.module.scss';
@@ -18,6 +17,7 @@ function Checkbox({ label, name }) {
 }
 
 Checkbox.propTypes = {
+  name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
 };
 
