@@ -5,11 +5,11 @@ import cls from 'classnames';
 // Styles
 import s from './index.module.scss';
 
-function Input({ error, id, label, ...props }) {
+function Input({ error, name, label, ...props }) {
   return (
     <div className={s.container}>
       <div className={s.label}>
-        <label htmlFor={id}>
+        <label htmlFor={name}>
           {label}
         </label>
       </div>
@@ -18,7 +18,8 @@ function Input({ error, id, label, ...props }) {
         className={cls(s.input, {
           [s.error]: error,
         })}
-        id={id}
+        id={name}
+        name={name}
         {...props}
       />
       {error && <div className={s.error}>{error}</div>}
@@ -29,7 +30,7 @@ function Input({ error, id, label, ...props }) {
 Input.propTypes = {
   error: PropTypes.string,
   className: PropTypes.string,
-  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
 };
 

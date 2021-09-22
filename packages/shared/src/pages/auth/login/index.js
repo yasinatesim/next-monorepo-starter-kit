@@ -3,6 +3,8 @@ import React from 'react';
 import { Logo, Facebook, Apple, Google } from '../../../components/icon';
 import Button from '../../../components/button';
 import Input from '../../../components/input';
+import Divider from '../../../components/divider';
+import Checkbox from '../../../components/checkbox';
 
 import s from './index.module.scss';
 
@@ -40,12 +42,21 @@ function Login() {
           </Button>
         ))}
 
-        <div className={s.divider}>
-          <span className={s.dividerTitle}>veya</span>
+        <Divider displayText />
+
+        <Input name="email" label="E-posta adresi veya kullanıcı adı" placeholder="E-posta adresi veya kullanıcı adı" />
+        <Input name="password" label="Parola" placeholder="Parola" error="Bu bir hata" />
+
+        <Button variant="link" to="/login">
+          Parolanı mı unuttun?
+        </Button>
+
+        <div>
+          <Checkbox name="remember" label="Beni hatırla" />
+          <div>sddsff</div>
         </div>
 
-        <Input label="E-posta adresi veya kullanıcı adı" placeholder="E-posta adresi veya kullanıcı adı" />
-        <Input label="Parola" placeholder="Parola" error="Bu bir hata" />
+        <Divider />
       </div>
     </>
   );
