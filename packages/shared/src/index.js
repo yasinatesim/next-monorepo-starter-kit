@@ -1,5 +1,3 @@
-import Login from './pages/auth/login';
+import './assets/styles/app.scss';
 
-export {
-  Login,
-};
+export { default as Login } from './pages/auth/login';
