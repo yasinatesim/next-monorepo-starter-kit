@@ -2,6 +2,8 @@ import React from 'react';
 import cls from 'classnames';
 
 import { Logo, Facebook, Apple, Google } from '../../../components/icon';
+import Button from '../../../components/button';
+import Input from '../../../components/input';
 
 import s from './index.module.scss';
 
@@ -33,15 +35,18 @@ function Login() {
         <h1 className={`h5 ${s.title}`}>Devam etmek için Spotify'da oturum aç.</h1>
 
         {buttons.map(({ text, icon, className }) => (
-          <div className={cls(s.btn, s[className])} key={className}>
-            {icon}
+          <Button variant={className} key={className}>
+            <span>{icon}</span>
             <span>{text}</span>
-          </div>
+          </Button>
         ))}
 
         <div className={s.divider}>
           <span className={s.dividerTitle}>veya</span>
         </div>
+
+        <Input label="E-posta adresi veya kullanıcı adı" placeholder="E-posta adresi veya kullanıcı adı" />
+        <Input label="Parola" placeholder="Parola" error="Bu bir hata" />
       </div>
     </>
   );

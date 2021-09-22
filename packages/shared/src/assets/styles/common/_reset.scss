@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -431,31 +431,4 @@ table {
 
 td {
   padding: 0;
-}
-
-/* Custom */
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: inherit;
-  font-weight: 900;
-  line-height: 1.1;
-  color: inherit;
-}
-.h4,
-.h5 {
-  letter-spacing: normal;
-}
-.h5,
-h5 {
-  font-size: 16px;
 }
