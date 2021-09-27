@@ -1,6 +1,5 @@
 // Mixins
 
-
 // Functions
 @function rem-calc($number) {
   $rem: ($number / $default-body-font-size) + rem;
