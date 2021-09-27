@@ -1,4 +1,5 @@
 import React from 'react';
+import cls from 'classnames';
 
 import { Logo, Facebook, Apple, Google } from '../../../components/icon';
 import Button from '../../../components/button';
@@ -33,30 +34,43 @@ function Login() {
         <Logo width="200" height="66" />
       </div>
       <div className={s.content}>
-        <h1 className={`h5 ${s.title}`}>Devam etmek için Spotify'da oturum aç.</h1>
+        <h1 className={cls(s.title, 'h5')}>Devam etmek için Spotify'da oturum aç.</h1>
 
         {buttons.map(({ text, icon, className }) => (
-          <Button variant={className} key={className}>
-            <span>{icon}</span>
-            <span>{text}</span>
-          </Button>
+          <div className={s.row}>
+            <Button variant={className} key={className}>
+              <span>{icon}</span>
+              <span>{text}</span>
+            </Button>
+          </div>
         ))}
 
         <Divider displayText />
 
         <Input name="email" label="E-posta adresi veya kullanıcı adı" placeholder="E-posta adresi veya kullanıcı adı" />
-        <Input name="password" label="Parola" placeholder="Parola" error="Bu bir hata" />
+        <Input name="password" label="Parola" placeholder="Parola" />
 
-        <Button variant="link" to="/login">
-          Parolanı mı unuttun?
-        </Button>
+        <div className={s.row}>
+          <Button variant="link" to="/login">
+            Parolanı mı unuttun?
+          </Button>
+        </div>
 
-        <div>
+        <div className={s.actions}>
           <Checkbox name="remember" label="Beni hatırla" />
-          <div>sddsff</div>
+
+          <div>
+            <Button>Oturum Aç</Button>
+          </div>
         </div>
 
         <Divider />
+
+        <div className={s.footer}>
+          <h2 className={cls(s.title, 'h5')}>Hesabın yok mu</h2>
+
+          <Button variant="default" className={s.register}>Kayıt Ol</Button>
+        </div>
       </div>
     </>
   );

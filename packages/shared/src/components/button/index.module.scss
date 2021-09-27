@@ -1,3 +1,7 @@
+@import "../../assets/styles/common/variable";
+@import "../../assets/styles/common/mixins";
+@import "../../assets/styles/common/spacing";
+
 .btn {
   font-size: 14px;
   line-height: 1;
@@ -7,11 +11,8 @@
   transition-duration: 0.3s;
   border-width: 0;
   letter-spacing: 2px;
-  min-width: 160px;
   text-transform: uppercase;
   white-space: normal;
-  margin-top: 10px;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +21,7 @@
   font-weight: 700;
 
   span {
-    margin-left: 12px;
+    margin-left: $space-3;
   }
 }
 
@@ -41,12 +42,17 @@
   background-color: transparent;
 }
 
+.primary {
+  background-color: $base-color;
+  color: #fff;
+}
+
 .link {
   color: #616467;
   text-decoration: underline;
   display: inline-block;
   font-weight: 700;
   &:hover {
-    color: #1da64d;
+    color: $base-color;
   }
 }

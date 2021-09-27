@@ -6,7 +6,7 @@ import s from './index.module.scss';
 
 function Checkbox({ label, name }) {
   return (
-    <div>
+    <div className={s.container}>
       <input className={s.checkbox} type="checkbox" id={name} />
       <span className={s.checkboxLabel} />
       <label htmlFor={name}>

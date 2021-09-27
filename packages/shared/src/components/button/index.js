@@ -8,7 +8,7 @@ import Link from 'next/link';
 // Styles
 import s from './index.module.scss';
 
-function Button({ children, className, to, variant, onClick }) {
+function Button({ children, className, to, variant = 'primary', onClick }) {
   if (to) {
     return (
       <Link href={to}>

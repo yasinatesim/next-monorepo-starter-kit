@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #222326;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $space-6;
+  color: $text-color;
   background-color: #fff;
   font-weight: 400;
 }
@@ -24,27 +24,27 @@ h5,
 h6 {
   font-family: inherit;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: $space-5;
   color: inherit;
 }
 
 .h4,
 h4 {
-  font-size: 18px;
+  font-size: $space-5;
 }
 .h5,
 h5 {
-  font-size: 16px;
+  font-size: $space-4;
 }
 .h6,
 h6 {
-  font-size: 14px;
+  font-size: $space-3;
 }
 
 .icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: $space-4;
+  height: $space-4;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
