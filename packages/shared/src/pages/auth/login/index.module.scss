@@ -34,7 +34,8 @@
   text-align: center;
 }
 
-.title, .account {
+.title,
+.account {
   text-align: center;
   font-weight: 800;
   line-height: $space-5;
@@ -44,7 +45,6 @@
   font-size: rem-calc(14);
 }
 .account {
-
   font-size: $space-4;
 }
 
