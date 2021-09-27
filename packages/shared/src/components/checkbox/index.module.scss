@@ -9,22 +9,26 @@
   gap: $space-2;
 }
 
+.text {
+  font-size: rem-calc(14);
+}
+
 .checkbox {
   display: none;
 
-  &:checked ~ .checkboxLabel {
+  &:checked ~ .label {
     border-color: transparent;
     background-color: $base-color;
     animation: jelly 0.6s ease;
   }
 
-  &:checked ~ .checkboxLabel:after {
+  &:checked ~ .label:after {
     opacity: 1;
     transform: rotate(45deg) scale(1);
   }
 }
 
-.checkboxLabel {
+.label {
   position: relative;
   display: inline-block;
   top: 1px;

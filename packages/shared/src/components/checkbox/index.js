@@ -8,8 +8,8 @@ function Checkbox({ label, name }) {
   return (
     <div className={s.container}>
       <input className={s.checkbox} type="checkbox" id={name} />
-      <span className={s.checkboxLabel} />
-      <label htmlFor={name}>
+      <span className={s.label} />
+      <label htmlFor={name} className={s.text}>
         {label}
       </label>
     </div>

@@ -67,7 +67,7 @@ function Login() {
         <Divider />
 
         <div className={s.footer}>
-          <h2 className={cls(s.title, 'h5')}>Hesabın yok mu</h2>
+          <h2 className={cls(s.account)}>Hesabın yok mu</h2>
 
           <Button variant="default" className={s.register}>Kayıt Ol</Button>
         </div>
