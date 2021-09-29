@@ -1,5 +1,5 @@
 {
-  "name": "desktop",
+  "name": "@spotify-clone/desktop",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "shared": "1.0.0"
+    "@spotify-clone/shared": "1.0.0"
   },
   "devDependencies": {
     "eslint": "7.32.0",

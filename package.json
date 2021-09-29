@@ -1,12 +1,12 @@
 {
-  "name": "spotify-clone",
+  "private": true,
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "package:desktop": "lerna run --scope desktop --stream dev",
-    "package:mobile": "lerna run --scope mobile --stream dev",
+    "package:desktop": "lerna run --scope @spotify-clone/desktop --stream dev",
+    "package:mobile": "lerna run --scope @spotify-clone/mobile --stream dev",
     "start": "run-p --print-label package:*",
     "build": "lerna run --parallel build",
     "lint": "eslint . --fix",

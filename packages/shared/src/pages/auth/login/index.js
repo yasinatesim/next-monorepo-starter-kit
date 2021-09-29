@@ -1,11 +1,11 @@
 import React from 'react';
 import cls from 'classnames';
 
-import { Logo, Facebook, Apple, Google } from '../../../components/icon';
-import Button from '../../../components/button';
-import Input from '../../../components/input';
-import Divider from '../../../components/divider';
-import Checkbox from '../../../components/checkbox';
+import { Logo, Facebook, Apple, Google } from '@spotify-clone/shared/src/components/icon';
+import Button from '@spotify-clone/shared/src/components/button';
+import Input from '@spotify-clone/shared/src/components/input';
+import Divider from '@spotify-clone/shared/src/components/divider';
+import Checkbox from '@spotify-clone/shared/src/components/checkbox';
 
 import s from './index.module.scss';
 
@@ -37,8 +37,8 @@ function Login() {
         <h1 className={cls(s.title, 'h5')}>Devam etmek için Spotify'da oturum aç.</h1>
 
         {buttons.map(({ text, icon, className }) => (
-          <div className={s.row}>
-            <Button variant={className} key={className}>
+          <div className={s.row} key={className}>
+            <Button variant={className}>
               <span>{icon}</span>
               <span>{text}</span>
             </Button>
