@@ -31,7 +31,7 @@ function Login() {
   return (
     <>
       <div className={s.head}>
-        <Logo width="200" height="66" />
+        <Logo className={s.logo} width="200" height="66" />
       </div>
       <div className={s.content}>
         <h1 className={cls(s.title, 'h5')}>Devam etmek için Spotify'da oturum aç.</h1>
@@ -59,7 +59,7 @@ function Login() {
         <div className={s.actions}>
           <Checkbox name="remember" label="Beni hatırla" />
 
-          <div>
+          <div className={s.signin}>
             <Button>Oturum Aç</Button>
           </div>
         </div>

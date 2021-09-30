@@ -6,10 +6,17 @@
   max-width: rem-calc(450);
   margin-right: auto;
   margin-left: auto;
+  padding-left: $space-4;
+  padding-right: $space-4;
 
   strong {
     text-align: center;
     display: block;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -22,6 +29,20 @@
   display: flex;
   justify-content: space-between;
   padding-top: $space-4;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.signin {
+  margin-top: $space-4;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    flex-direction: row;
+  }
 }
 
 .head {
@@ -29,9 +50,24 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #d9dadc;
-  padding: $space-6 0;
-  margin-bottom: $space-8;
   text-align: center;
+  padding: $space-2 0;
+  margin-bottom: $space-6;
+
+  .logo {
+    width: 125px;
+    height: 41px;
+  }
+
+  @media (min-width: 768px) {
+    padding: $space-6 0;
+    margin-bottom: $space-8;
+
+    .logo {
+      width: auto;
+      height: auto;
+    }
+  }
 }
 
 .title,
