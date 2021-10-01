@@ -1,11 +1,11 @@
 import React from 'react';
 import cls from 'classnames';
 
-import { Logo, Facebook, Apple, Google } from '@spotify-clone/shared/src/components/icon';
-import Button from '@spotify-clone/shared/src/components/button';
-import Input from '@spotify-clone/shared/src/components/input';
-import Divider from '@spotify-clone/shared/src/components/divider';
-import Checkbox from '@spotify-clone/shared/src/components/checkbox';
+import { Logo, Facebook, Apple, Google } from '@spotify-clone/shared/src/universal/components/icon';
+import Button from '@spotify-clone/shared/src/universal/components/button';
+import Input from '@spotify-clone/shared/src/universal/components/input';
+import Divider from '@spotify-clone/shared/src/universal/components/divider';
+import Checkbox from '@spotify-clone/shared/src/universal/components/checkbox';
 
 import s from './index.module.scss';
 
