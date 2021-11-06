@@ -2,6 +2,8 @@ import React from 'react';
 
 import { LogoWhite } from '@spotify-clone/shared/src/universal/components/icon';
 
+import Menu from './components/menu';
+
 import s from './index.module.scss';
 
 function Sidebar() {
@@ -11,7 +13,8 @@ function Sidebar() {
         <LogoWhite />
       </a>
 
-      {/* <Menu />
+      <Menu />
+      {/*
 
     <nav className="mt-6">
       <ul>
