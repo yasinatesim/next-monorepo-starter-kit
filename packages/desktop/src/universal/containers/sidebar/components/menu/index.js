@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 import { Home, Search, Collection } from '@spotify-clone/shared/src/universal/components/icon';
 
-const ICON_SIZE = 24;
-
 import s from './index.module.scss';
+
+const ICON_SIZE = 24;
 
 function Menu() {
   const menuItems = [
