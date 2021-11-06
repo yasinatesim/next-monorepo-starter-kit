@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 
-function MyApp({ Component, pageProps }) {
+import '@spotify-clone/shared/src/assets/styles/app.scss';
+
+function SpotifyDesktop({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
 
-MyApp.propTypes = {
+SpotifyDesktop.propTypes = {
   Component: PropTypes.func.isRequired,
   pageProps: PropTypes.object.isRequired,
 };
 
-export default MyApp;
+export default SpotifyDesktop;

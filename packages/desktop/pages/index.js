@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+import Sidebar from '@spotify-clone/desktop/src/universal/containers/sidebar';
 
-import { Login } from '@spotify-clone/shared';
+// import { Login } from '@spotify-clone/shared';
 
 function Home() {
   return (
@@ -12,7 +13,9 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Login />
+      {/* <Login /> */}
+
+      <Sidebar />
     </div>
   );
 }
