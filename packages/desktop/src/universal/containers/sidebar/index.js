@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { LogoWhite, Plus, Heart } from '@spotify-clone/shared/src/universal/components/icon';
 
@@ -7,8 +7,15 @@ import Menu from './components/menu';
 import s from './index.module.scss';
 
 function Sidebar() {
+  const [width, setWidth] = useState(false);
+
   return (
-    <aside className={s.sidebar}>
+    <aside className={s.sidebar} style={{ width: `${width}px` }}>
+      <div className={s.resizer}>
+        <label>
+          <input type="range" min="120" max="384" step="10" value={width} onChange={(e)=> setWidth(e.target.value)} />
+        </label>
+      </div>
       <a href="#" className={s.logo}>
         <LogoWhite height={40} />
       </a>
@@ -38,7 +45,7 @@ function Sidebar() {
 
       {/* <Playlists />
 
-    <DownloadApp />  */}
+      <DownloadApp />  */}
     </aside>
   );
 }
