@@ -13,7 +13,7 @@ function Sidebar() {
     <aside className={s.sidebar} style={{ width: `${width}px` }}>
       <div className={s.resizer}>
         <label>
-          <input type="range" min="120" max="384" step="10" value={width} onChange={(e)=> setWidth(e.target.value)} />
+          <input type="range" min="120" max="384" step="10" value={width} onChange={(e) => setWidth(e.target.value)} />
         </label>
       </div>
       <a href="#" className={s.logo}>
