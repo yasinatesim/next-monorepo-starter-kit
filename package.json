@@ -1,10 +1,12 @@
 {
   "private": true,
+  "name": "spotify-clone",
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes",
     "package:desktop": "lerna run --scope @spotify-clone/desktop --stream dev",
     "package:mobile": "lerna run --scope @spotify-clone/mobile --stream dev",
     "start": "run-p --print-label package:*",
@@ -34,5 +36,8 @@
     "next-transpile-modules": "^8.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
