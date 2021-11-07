@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 
 import '@spotify-clone/shared/src/assets/styles/app.scss';
 
+import '@spotify-clone/desktop/src/assets/styles/app.scss';
+
 function SpotifyDesktop({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }

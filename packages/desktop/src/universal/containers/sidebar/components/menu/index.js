@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+import cls from 'classnames';
+
 import { Home, Search, Collection } from '@spotify-clone/shared/src/universal/components/icon';
 
 import s from './index.module.scss';
@@ -13,6 +15,7 @@ function Menu() {
       name: 'Ana sayfa',
       icon: <Home width={ICON_SIZE} height={ICON_SIZE} />,
       href: '/',
+      active: true,
     },
     {
       name: 'Ara',
@@ -32,7 +35,7 @@ function Menu() {
         {menuItems.map((item) => (
           <li>
             <Link href="/collection">
-              <a className={s.menuLink}>
+              <a className={cls(s.menuLink, { [s.active]: item.active })}>
                 {item.icon}
                 {item.name}
               </a>
