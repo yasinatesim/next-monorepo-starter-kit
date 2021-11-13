@@ -32,8 +32,8 @@ function Menu() {
   return (
     <nav className={s.menu}>
       <ul className={s.menuElements}>
-        {menuItems.map((item) => (
-          <li>
+        {menuItems.map((item, index) => (
+          <li key={index}>
             <Link href="/collection">
               <a className={cls(s.menuLink, { [s.active]: item.active })}>
                 {item.icon}

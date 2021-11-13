@@ -1,6 +1,7 @@
 import { LogoWhite, Plus, Heart } from '@spotify-clone/shared/src/universal/components/icon';
 
 import Menu from './components/menu';
+import Playlist from './components/playlist';
 
 import s from './index.module.scss';
 
@@ -35,9 +36,8 @@ function Sidebar() {
         </ul>
       </nav>
 
-      {/* <Playlists />
-
-      <DownloadApp />  */}
+      <Playlist />
+      {/* <DownloadApp />  */}
     </aside>
   );
 }
