@@ -1,13 +1,11 @@
-@import '@spotify-clone/shared/src/assets/styles/common/variable';
-@import '@spotify-clone/shared/src/assets/styles/common/mixins';
-@import '@spotify-clone/shared/src/assets/styles/common/spacing';
+@import '@spotify-clone/shared/src/assets/styles/common/import.scss';
 
 .divider {
   border-top: 1px solid #d9dadc;
   display: block;
   line-height: 1px;
-  margin-top: $space-4;
-  margin-bottom: $space-4;
+  margin-top: rem-calc(16);
+  margin-bottom: rem-calc(16);
   position: relative;
   text-align: center;
 }
@@ -16,7 +14,7 @@
   background: #fff;
   font-size: 12px;
   letter-spacing: 1px;
-  padding: 0 $space-5;
+  padding: 0 rem-calc(20);
   text-transform: uppercase;
   font-weight: 700;
 }

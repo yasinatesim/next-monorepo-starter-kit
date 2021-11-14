@@ -1,6 +1,4 @@
-@import '@spotify-clone/shared/src/assets/styles/common/variable';
-@import '@spotify-clone/shared/src/assets/styles/common/mixins';
-@import '@spotify-clone/shared/src/assets/styles/common/spacing';
+@import '@spotify-clone/shared/src/assets/styles/common/import.scss';
 
 .btn {
   font-size: 12px;
@@ -21,7 +19,7 @@
   font-weight: 700;
 
   span {
-    margin-left: $space-3;
+    margin-left: rem-calc(12);
   }
 
   @media (min-width: 768px) {

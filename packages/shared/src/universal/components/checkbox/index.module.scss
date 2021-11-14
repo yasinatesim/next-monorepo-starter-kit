@@ -1,12 +1,10 @@
-@import '@spotify-clone/shared/src/assets/styles/common/variable';
-@import '@spotify-clone/shared/src/assets/styles/common/mixins';
-@import '@spotify-clone/shared/src/assets/styles/common/spacing';
+@import '@spotify-clone/shared/src/assets/styles/common/import.scss';
 
 .container {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  gap: $space-2;
+  gap: rem-calc(8);
 }
 
 .text {
@@ -35,7 +33,7 @@
   width: 17px;
   height: 17px;
   border: 1px solid #c8ccd4;
-  border-radius: $space-1;
+  border-radius: rem-calc(4);
 
   transition: background-color 0.1s ease;
 

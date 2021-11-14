@@ -1,10 +1,8 @@
 // Settings
-@import './common/variable';
-@import './common/mixins';
-@import './common/reset';
+@import './common/import.scss';
 
-// Spacing
-@import './common/spacing';
+// Normalize
+@import './common/reset';
 
 // Global
 @import './common/global';

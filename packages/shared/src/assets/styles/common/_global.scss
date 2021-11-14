@@ -3,7 +3,7 @@
 body {
   font-family: $font-family;
   font-size: $font-size;
-  line-height: $space-6;
+  line-height: rem-calc(24);
   color: $text-color;
   background-color: #fff;
   font-weight: 400;
@@ -11,8 +11,8 @@ body {
 
 .icon {
   display: inline-block;
-  width: $space-4;
-  height: $space-4;
+  width: rem-calc(16);
+  height: rem-calc(16);
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
