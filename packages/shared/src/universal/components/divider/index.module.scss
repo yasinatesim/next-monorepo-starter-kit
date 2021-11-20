@@ -1,17 +1,19 @@
 @import '@spotify-clone/shared/src/assets/styles/common/import.scss';
 
 .divider {
-  border-top: 1px solid #d9dadc;
-  display: block;
-  line-height: 1px;
+  display: flex;
+  align-items: center;
   margin-top: rem-calc(16);
   margin-bottom: rem-calc(16);
-  position: relative;
-  text-align: center;
+  &::before, &::after {
+    content: '';
+    background-color: #d9dadc;
+    width: 100%;
+    height: 1px;
+  }
 }
 
 .dividerTitle {
-  background: #fff;
   font-size: 12px;
   letter-spacing: 1px;
   padding: 0 rem-calc(20);

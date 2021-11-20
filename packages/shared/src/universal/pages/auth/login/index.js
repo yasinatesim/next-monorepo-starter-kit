@@ -45,7 +45,7 @@ function Login() {
           </div>
         ))}
 
-        <Divider displayText />
+        <Divider displayText="veya" />
 
         <Input name="email" label="E-posta adresi veya kullanıcı adı" placeholder="E-posta adresi veya kullanıcı adı" />
         <Input name="password" label="Parola" placeholder="Parola" />

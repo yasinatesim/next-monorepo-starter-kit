@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import s from './index.module.scss';
 
 function Divider({ displayText }) {
-  return <div className={s.divider}>{displayText && <span className={s.dividerTitle}>veya</span>}</div>;
+  return <div className={s.divider}>{displayText && <span className={s.dividerTitle}>{displayText}</span>}</div>;
 }
 
 Divider.propTypes = {
