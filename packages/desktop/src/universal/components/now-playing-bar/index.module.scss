@@ -1,9 +1,9 @@
 @import '@spotify-clone/shared/src/assets/styles/common/import.scss';
 
-.container{
+.container {
   display: flex;
   cursor: pointer;
-  background-image: linear-gradient(90deg,#af2896,#509bf5);
+  background-image: linear-gradient(90deg, #af2896, #509bf5);
   width: 100%;
   padding: 11px 24px 7px 15px;
   align-items: center;
@@ -11,7 +11,7 @@
   user-select: none;
 }
 
-.content{
+.content {
   margin-left: 24px;
   color: #fff;
 }
@@ -19,7 +19,7 @@
 .title {
   font-size: 0.75rem;
   font-weight: 400;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   line-height: 1rem;
   text-transform: uppercase;
 }

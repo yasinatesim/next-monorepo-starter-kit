@@ -1,4 +1,3 @@
-
 import Button from '@spotify-clone/shared/src/universal/components/button';
 
 import s from './index.module.scss';

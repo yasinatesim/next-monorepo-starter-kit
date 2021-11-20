@@ -5,7 +5,8 @@
   align-items: center;
   margin-top: rem-calc(16);
   margin-bottom: rem-calc(16);
-  &::before, &::after {
+  &::before,
+  &::after {
     content: '';
     background-color: #d9dadc;
     width: 100%;
