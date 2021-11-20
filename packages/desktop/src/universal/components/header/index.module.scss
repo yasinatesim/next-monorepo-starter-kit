@@ -1,1 +1,93 @@
 @import '@spotify-clone/shared/src/assets/styles/common/import.scss';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  z-index: 10;
+  height: 3.75rem;
+}
+
+.navigation {
+display: flex;
+align-items: center;
+column-gap: 1rem;
+}
+
+.link {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: #000;
+  opacity: .7;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownButton {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+	border-radius: 1.5rem;
+  padding-right: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  &.active, &:hover {
+    background-color: #282828;
+  }
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  padding: 0.125rem;
+}
+
+.username {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.dropdownIconRotate {
+  transform: rotate(180deg);
+}
+
+.menuItems {
+  position: absolute;
+  padding: 0.25rem;
+  top: 100%;
+  right: 0;
+  width: 12rem;
+  background-color: #282828;
+	border-radius: 0.25rem;
+  transform: translateY(0.5rem);
+}
+
+.menuItem {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.menuItemActive {
+  background-color: rgba(#fff, 10%);
+}

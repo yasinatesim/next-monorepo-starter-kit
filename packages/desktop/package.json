@@ -10,6 +10,7 @@
     "svg": "npx @svgr/cli -d ./src/components/icon ./src/assets/images/icons --no-svgo"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
     "@spotify-clone/shared": "1.0.0",
     "next": "11.1.2",
     "react": "17.0.2",
