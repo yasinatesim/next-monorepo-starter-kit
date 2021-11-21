@@ -19,4 +19,5 @@ body {
 .wrapper {
   height: calc(100% - 6rem);
   display: flex;
+  transition: all 1s;
 }
