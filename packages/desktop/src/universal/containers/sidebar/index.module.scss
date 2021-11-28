@@ -18,16 +18,20 @@
 
 .nav {
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .sidebar {
   position: relative;
-  width: 15rem;
   display: flex;
   background-color: #000;
   flex-shrink: 0;
   flex-direction: column;
   padding-top: 1.5rem;
+  user-select: none;
+  grid-area: sidebar;
 }
 
 .logo {

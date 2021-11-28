@@ -1,6 +1,6 @@
 @import '@spotify-clone/shared/src/assets/styles/common/import.scss';
 
 .content {
-  flex: auto;
   overflow: auto;
+  grid-area: content;
 }

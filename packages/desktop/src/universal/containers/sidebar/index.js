@@ -25,10 +25,11 @@ function Sidebar() {
       handle={<div className={s.resizer} />}
     >
       <aside className={s.sidebar} style={{ width: `${width}px` }}>
-        <div className="resizer" />
-        <a href="#" className={s.logo}>
-          <LogoWhite height={40} />
-        </a>
+        <div className={s.logo}>
+          <a href="#">
+            <LogoWhite height={40} />
+          </a>
+        </div>
 
         <Menu />
 
@@ -51,11 +52,12 @@ function Sidebar() {
               </a>
             </li>
           </ul>
+
+          <Playlist />
+        <DownloadApp />
         </nav>
 
-        <Playlist />
 
-        <DownloadApp />
       </aside>
     </Resizable>
   );

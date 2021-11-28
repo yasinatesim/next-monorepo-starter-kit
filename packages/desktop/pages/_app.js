@@ -10,15 +10,13 @@ import '@spotify-clone/desktop/src/assets/styles/app.scss';
 
 function SpotifyDesktop({ Component, pageProps }) {
   return (
-    <>
-      <div className="wrapper">
-        <Sidebar />
-        <Content>
-          <Component {...pageProps} />
-        </Content>
-      </div>
+    <div className="wrapper">
+      <Sidebar />
+      <Content>
+        <Component {...pageProps} />
+      </Content>
       <Footer />
-    </>
+    </div>
   );
 }
 

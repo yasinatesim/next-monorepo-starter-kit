@@ -2,8 +2,7 @@ import s from './index.module.scss';
 
 function Playlist() {
   return (
-    <nav className={s.playlist}>
-      <ul>
+    <div className={s.playlist}>
         {new Array(40).fill(0).map((_, index) => (
           <li key={index}>
             <a href="#" className={s.link}>
@@ -11,8 +10,7 @@ function Playlist() {
             </a>
           </li>
         ))}
-      </ul>
-    </nav>
+      </div>
   );
 }
 
