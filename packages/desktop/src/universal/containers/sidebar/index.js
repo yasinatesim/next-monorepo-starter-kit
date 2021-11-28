@@ -54,9 +54,8 @@ function Sidebar() {
           </ul>
 
           <Playlist />
-        <DownloadApp />
+          <DownloadApp />
         </nav>
-
 
       </aside>
     </Resizable>

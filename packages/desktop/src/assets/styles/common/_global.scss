@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -15,7 +16,8 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: auto 1fr;
-  grid-template-areas:"sidebar content"
-                      "footer footer";
+  grid-template-areas:
+    'sidebar content'
+    'footer footer';
   overflow: hidden;
 }
