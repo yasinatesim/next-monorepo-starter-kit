@@ -34,7 +34,7 @@ function Header() {
             >
               <img src={user.avatar} alt="Avatar" className={s.avatar} />
               <span className={s.username}>{user.name}</span>
-              <span className={cls({ [s.dropdownIconRotate]: open })}>
+              <span className={cls(s.dropdownIcon, { [s.dropdownIconRotate]: open })}>
                 <Down width={16} height={16} />
               </span>
             </Menu.Button>

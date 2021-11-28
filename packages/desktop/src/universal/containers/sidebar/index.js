@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Resizable } from 'react-resizable';
-import { LogoWhite, Plus, Heart } from '@spotify-clone/shared/src/universal/components/icon';
+import { LogoWhite } from '@spotify-clone/shared/src/universal/components/icon';
 
 import Menu from './components/menu';
 import Playlist from './components/playlist';
+import FeaturedList from './components/featured-list';
 import DownloadApp from './components/download-app';
 
 import s from './index.module.scss';
@@ -34,24 +35,7 @@ function Sidebar() {
         <Menu />
 
         <nav className={s.nav}>
-          <ul>
-            <li>
-              <a href="#" className={s.link}>
-                <span className={s.plus}>
-                  <Plus width={12} height={12} />
-                </span>
-                Çalma Listesi Oluştur
-              </a>
-            </li>
-            <li>
-              <a href="#" className={s.link}>
-                <span className={s.heart}>
-                  <Heart width={12} height={12} />
-                </span>
-                Beğenilen Şarkılar
-              </a>
-            </li>
-          </ul>
+          <FeaturedList />
 
           <Playlist />
           <DownloadApp />
