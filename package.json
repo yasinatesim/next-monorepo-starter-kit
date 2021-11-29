@@ -12,7 +12,8 @@
     "start": "run-p --print-label package:*",
     "build": "lerna run --parallel build",
     "lint": "eslint . --fix",
-    "format": "prettier packages/**/**/*.{js,scss} --write"
+    "format": "prettier packages/**/**/*.{js,scss} --write",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",

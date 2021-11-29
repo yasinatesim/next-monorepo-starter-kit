@@ -10,7 +10,7 @@ import DownloadApp from './components/download-app';
 import s from './index.module.scss';
 
 function Sidebar() {
-  const [width, setWidth] = useState(240);
+  const [width, setWidth] = useState(232);
 
   const onResize = (_, { size }) => {
     setWidth(size.width);
