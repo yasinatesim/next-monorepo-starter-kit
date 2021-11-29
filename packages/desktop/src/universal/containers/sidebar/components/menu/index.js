@@ -34,7 +34,7 @@ function Menu() {
       <ul className={s.menuElements}>
         {menuItems.map((item, index) => (
           <li key={index}>
-            <Link href="/collection">
+            <Link href={item.href}>
               <a className={cls(s.menuLink, { [s.active]: item.active })}>
                 {item.icon}
                 {item.name}

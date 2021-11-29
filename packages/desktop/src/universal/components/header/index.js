@@ -29,9 +29,7 @@ function Header() {
       <Menu as="div" className={s.dropdown}>
         {({ open }) => (
           <>
-            <Menu.Button
-              className={cls(s.dropdownButton, { [s.active]: open })}
-            >
+            <Menu.Button className={cls(s.dropdownButton, { [s.active]: open })}>
               <img src={user.avatar} alt="Avatar" className={s.avatar} />
               <span className={s.username}>{user.name}</span>
               <span className={cls(s.dropdownIcon, { [s.dropdownIconRotate]: open })}>
@@ -41,10 +39,7 @@ function Header() {
             <Menu.Items className={s.menuItems}>
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    className={cls(s.menuItem, { [s.menuItemActive]: active })}
-                    href="#"
-                  >
+                  <a className={cls(s.menuItem, { [s.menuItemActive]: active })} href="#">
                     Account
                     <Account width={16} height={16} />
                   </a>
@@ -52,20 +47,14 @@ function Header() {
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    className={cls(s.menuItem, { [s.menuItemActive]: active })}
-                    href="#"
-                  >
+                  <a className={cls(s.menuItem, { [s.menuItemActive]: active })} href="#">
                     Profile
                   </a>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <a
-                    className={cls(s.menuItem, { [s.menuItemActive]: active })}
-                    href="#"
-                  >
+                  <a className={cls(s.menuItem, { [s.menuItemActive]: active })} href="#">
                     Log out
                   </a>
                 )}

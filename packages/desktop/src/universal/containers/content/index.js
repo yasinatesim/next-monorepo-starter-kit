@@ -8,6 +8,7 @@ function Content({ children }) {
   return (
     <main className={s.content}>
       <Header />
+
       {children}
     </main>
   );
