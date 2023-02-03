@@ -1,4 +1,4 @@
-@import '@spotify-clone/shared/src/assets/styles/common/import.scss';
+@import '@spotify-clone/shared/src/assets/styles/common/import';
 
 .container {
   margin-bottom: rem-calc(10);
@@ -22,7 +22,6 @@
   border-radius: 0;
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
   display: block;
   color: $text-color;
 

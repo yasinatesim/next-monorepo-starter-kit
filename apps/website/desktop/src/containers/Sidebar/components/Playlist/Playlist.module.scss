@@ -1,0 +1,23 @@
+@import '@spotify-clone/shared/src/assets/styles/common/import';
+
+.playlist {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  flex: auto;
+  border-top: 1px solid rgba(#fff, 0.2);
+  overflow: auto;
+  height: 0;
+}
+
+.link {
+  font-size: 0.813rem;
+  color: #b3b3b3;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: default;
+
+  &:hover {
+    color: #fff;
+  }
+}

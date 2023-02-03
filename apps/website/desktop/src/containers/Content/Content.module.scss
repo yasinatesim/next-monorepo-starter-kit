@@ -1,0 +1,10 @@
+@import '@spotify-clone/shared/src/assets/styles/common/import';
+
+.wrapper {
+  overflow: auto;
+  grid-area: content;
+}
+
+.content {
+  padding: 2rem;
+}

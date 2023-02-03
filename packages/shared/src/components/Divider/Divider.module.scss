@@ -1,10 +1,11 @@
-@import '@spotify-clone/shared/src/assets/styles/common/import.scss';
+@import '@spotify-clone/shared/src/assets/styles/common/import';
 
 .divider {
   display: flex;
   align-items: center;
   margin-top: rem-calc(16);
   margin-bottom: rem-calc(16);
+
   &::before,
   &::after {
     content: '';

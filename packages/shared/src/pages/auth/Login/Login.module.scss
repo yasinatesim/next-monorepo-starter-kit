@@ -1,11 +1,10 @@
-@import '@spotify-clone/shared/src/assets/styles/common/import.scss';
+@import '@spotify-clone/shared/src/assets/styles/common/import';
 
 .content {
   max-width: rem-calc(450);
   margin-right: auto;
   margin-left: auto;
   padding-left: rem-calc(16);
-
   padding-right: rem-calc(16);
 
   strong {
@@ -79,6 +78,7 @@
 .title {
   font-size: rem-calc(14);
 }
+
 .account {
   font-size: rem-calc(16);
 }
